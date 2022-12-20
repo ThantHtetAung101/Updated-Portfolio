@@ -1,0 +1,185 @@
+body {
+  display: flex;
+  overflow-x: hidden;
+}
+.toggleBtn {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  width: 70px;
+  height: 70px;
+  color: white;
+  border: none;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-toggle-menu {
+  float: right;
+  text-align: right;
+  margin-right: 30px;
+}
+.toggleBtn span {
+  position: absolute;
+  background-color: black;
+  width: 30px;
+  height: 2px;
+  border-radius: 10px;
+  transition: 0.5s ease-in;
+  overflow: hidden;
+}
+.toggleBtn span:nth-child(1) {
+  transform: translate(-10px, -10px);
+  width: 20px;
+}
+.toggleBtn span:nth-child(2) {
+  transform: translateY(0);
+}
+.toggleBtn span:nth-child(4) {
+  transform: translate(10px, 10px);
+  width: 20px;
+}
+.toggleBtn span:nth-child(3) {
+  width: 0px;
+}
+.toggleBtn.animatedBtn span:nth-child(2) {
+  transform: rotate(45deg);
+}
+.toggleBtn.animatedBtn span:nth-child(1) {
+  overflow: hidden;
+  margin-left: 130px;
+}
+.toggleBtn.animatedBtn span:nth-child(4) {
+  overflow: hidden;
+  margin-right: 130px;
+}
+.toggleBtn.animatedBtn span:nth-child(3) {
+  overflow: hidden;
+  width: 30px;
+  transform: rotate(-45deg);
+}
+.navbar-brand {
+  font-family: "Unbounded", cursive;
+}
+.nav-link {
+  font-family: "Unbounded", cursive;
+  border-bottom: 0;
+  transition: 0.5s ease;
+}
+.nav-link:hover {
+  border-bottom: 1px solid black;
+}
+.regular-font {
+  font-family: "Unbounded", cursive;
+}
+#app {
+  width: 100%;
+}
+.navbar-collapse {
+  justify-content: end;
+}
+.header-font {
+  font-family: "Unbounded", cursive;
+  font-size: 5rem;
+}
+.main-font {
+  font-family: "Unbounded", cursive;
+  font-size: 3rem;
+}
+.vector-img {
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  justify-content: center;
+  transition: transform 1s ease-in-out;
+  perspective: 1000px;
+}
+.images {
+  width: 500px;
+  height: 287px;
+  position: relative;
+  vertical-align: top;
+  border: 1px solid black;
+  transition: 1s ease-out;
+}
+.header-font:hover {
+  font-style: italic;
+}
+#contact {
+  display: flex;
+  height: 350px;
+  align-items: center;
+  justify-content: center;
+}
+.animatedLeave {
+  animation: leave 1s ease-out;
+}
+@keyframes leave {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  } 100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+.messageBtn {
+  border-radius: 0;
+}
+.vector-img:hover {
+  transform: rotateY(180deg);
+}
+.resume {
+  position: absolute;
+  bottom: 50px;
+  height: 50px;
+}
+@media only screen and (min-width: 1000px) {
+  .container-warp {
+    width: 70%!important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .vector-img {
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+  }
+  .header-font {
+    font-size: 4rem;
+  }
+  .images {
+    width: 100%;
+  }
+  .container-warp {
+    width: 100%!important;
+  }
+}
+label {
+  font-family: "Unbounded", cursive;
+}
+.form {
+  font-family: "Unbounded", cursive;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid black;
+}
+.container-warp {
+  width: 50%;
+}
+.form:focus {
+  outline: none;
+}
+.lni {
+  font-size: 3rem;
+}
+div#skills {
+  height: 480px;
+  background-image: linear-gradient(
+      rgba(248, 249, 250, 0.5),
+      rgba(248, 249, 250, 0.5)
+    ),
+    url("../src/assets/vue.webp");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
