@@ -88,7 +88,7 @@ useMotion(vector, {
             </div>
             <div class="col-lg-6 col-12 d-flex position-relative justify-content-center">
                 <img src="../assets/mypic.webp" class="rounded-pill vector-img" ref="vector" alt="vector">
-                <a ref="resumeBtn" href="https://www.google.com" target="_blank" class="btn pt-2 regular-font btn-outline-light resume">Check My Resume</a>
+                <a ref="resumeBtn" href="https://drive.google.com/file/d/1CZpX4SBlANUS2U6PTjRLCVxPQzkqjRq1/view?usp=sharing" target="_blank" class="btn pt-2 regular-font btn-outline-light resume">Check My Resume</a>
             </div>
         </div>
     </div>
