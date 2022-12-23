@@ -61,10 +61,10 @@ useMotion(img3, {
         <h1 class="main-font text-center" ref="title">PROJECTS</h1>
         <div class="row mt-5">
             <div class="col-lg-6 col-12 mb-3" ref="img1">
-                <h5 class="regular-font">Portfolio Maker (Vue)</h5>
-                <router-link to="/404">
+                <h5 class="regular-font">Portfolio Maker Demo (Vue)</h5>
+                <a href="https://bs-portfolio-maker.netlify.app/">
                     <img src="../assets/portfolioMaker.webp" class="images" alt="">
-                </router-link>
+                </a>
             </div>
             <div class="col-lg-6 col-12 mb-5" ref="img2">
                 <h5 class="regular-font">AMVtube (Laravel)</h5>
